@@ -9,7 +9,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "build": "browserify -t brfs index.js -o `git config greasemonkey.file || echo en-ja-ruby-translator.user.js`",
+    "build": "browserify -t brfs index.js -o dist/en-ja-ruby-translator.user.js",
     "watch": "watchify -t brfs index.js -o `git config greasemonkey.file || echo en-ja-ruby-translator.user.js`",
     "test": "mocha test/*.js"
   },

@@ -25,6 +25,7 @@ var addStyle = (function () {
         isAddedStyle = true;
     }
 })();
+// Alt+Click-up
 document.addEventListener('mouseup', function (event) {
     if (!event.altKey) {
         return
