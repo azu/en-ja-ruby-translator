@@ -1,14 +1,22 @@
 # en-ja-ruby-translator
 
+[ずるっこ！](http://zurukko.jp/ "ずるっこ！")ライクな英和辞書 Greasemonkey.
 
+![gif](http://gyazo.com/2ec5ad1765102ea66c773128ce884012.gif)
 
 ## Installation
 
-- [ ] Describe the installation process
+```
+make install
+open dist/en-ja-ruby-translator.user.js
+```
 
 ## Usage
 
-- [ ] Write usage instructions
+- Alt + 選択範囲 でその周辺の単語が和訳されます
+- `<code>`や`<pre>`要素などは対象外にしてあります
+
+![img](http://monosnap.com/image/lKEHTkngNSDJxESz0PQNxMQh17Pwd8.png)
 
 ## Contributing
 
