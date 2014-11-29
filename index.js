@@ -25,7 +25,10 @@ var addStyle = (function () {
         isAddedStyle = true;
     }
 })();
-document.addEventListener('mouseup', function (ev) {
+document.addEventListener('mouseup', function (event) {
+    if (!event.altKey) {
+        return
+    }
     var container = findAncestorContainer();
     if (container == null) {
         return;
