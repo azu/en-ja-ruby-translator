@@ -9,14 +9,22 @@
   },
   "main": "index.js",
   "scripts": {
+    "build": "browserify -t brfs index.js -o `git config greasemonkey.file || echo en-ja-ruby-translator.user.js`",
+    "watch": "watchify -t brfs index.js -o `git config greasemonkey.file || echo en-ja-ruby-translator.user.js`",
     "test": "mocha test/*.js"
   },
-  "directories" : {
-    "test" : "test/"
+  "directories": {
+    "test": "test/"
   },
   "author": "azu",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/azu/en-ja-ruby-translator/issues"
+  },
+  "devDependencies": {
+    "brfs": "^1.2.0",
+    "browserify": "^6.3.3",
+    "watchify": "^2.1.1",
+    "x-readline": "^1.0.1"
   }
 }
