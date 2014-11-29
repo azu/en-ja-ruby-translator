@@ -2,7 +2,7 @@
 .GM__ruby-translator {
   /*each element*/ }
   .GM__ruby-translator .non-ruby-translator, .GM__ruby-translator .ruby-translator {
-    font-size: 1rem !important; }
+    font-size: 1.2em !important; }
   .GM__ruby-translator .ruby-translator rt {
     width: 100% !important;
     text-align: center; }
