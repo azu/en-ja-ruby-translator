@@ -1,0 +1,22 @@
+{
+  "name": "en-ja-ruby-translator",
+  "description": "english to japanese word translator",
+  "version": "1.0.0",
+  "homepage": "https://github.com/azu/en-ja-ruby-translator/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azu/en-ja-ruby-translator.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "directories" : {
+    "test" : "test/"
+  },
+  "author": "azu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azu/en-ja-ruby-translator/issues"
+  }
+}
