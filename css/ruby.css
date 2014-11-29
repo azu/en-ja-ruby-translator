@@ -1,21 +1,20 @@
-.non-ruby-translator, .ruby-translator {
-    font-size: 1rem !important;
-}
-
-.ruby-translator rt {
+/* wrap element*/
+.GM__ruby-translator {
+  /*each element*/ }
+  .GM__ruby-translator .non-ruby-translator, .GM__ruby-translator .ruby-translator {
+    font-size: 1rem !important; }
+  .GM__ruby-translator .ruby-translator rt {
     width: 100% !important;
-    text-align: center;
-}
-
-ruby,
-ruby > rbc,
-ruby > rtc,
-ruby rb,
-ruby > rb,
-ruby > rbc > rb
-ruby rt,
-ruby > rt,
-ruby > rtc > rt {
+    text-align: center; }
+  .GM__ruby-translator ruby,
+  .GM__ruby-translator ruby > rbc,
+  .GM__ruby-translator ruby > rtc,
+  .GM__ruby-translator ruby rb,
+  .GM__ruby-translator ruby > rb,
+  .GM__ruby-translator ruby > rbc > rb
+  ruby rt,
+  .GM__ruby-translator ruby > rt,
+  .GM__ruby-translator ruby > rtc > rt {
     display: inline-block !important;
     margin-top: 0 !important;
     margin-right: 0 !important;
@@ -34,35 +33,27 @@ ruby > rtc > rt {
     line-height: 1.4em !important;
     font-size: inherit !important;
     transform: none !important;
-    position: static !important;
-}
-
-ruby rt,
-ruby > rt,
-ruby > rtc > rt,
-ruby > rtc {
-    text-decoration: none !important;
-}
-
-ruby,
-ruby > rbc,
-ruby > rtc,
-ruby rb,
-ruby > rb,
-ruby > rbc > rb {
-    margin-left: 0 !important;
-}
-
-ruby > rbc,
-ruby > rtc,
-ruby rb,
-ruby > rb,
-ruby > rbc > rb {
+    position: static !important; }
+  .GM__ruby-translator ruby rt,
+  .GM__ruby-translator ruby > rt,
+  .GM__ruby-translator ruby > rtc > rt,
+  .GM__ruby-translator ruby > rtc {
+    text-decoration: none !important; }
+  .GM__ruby-translator ruby,
+  .GM__ruby-translator ruby > rbc,
+  .GM__ruby-translator ruby > rtc,
+  .GM__ruby-translator ruby rb,
+  .GM__ruby-translator ruby > rb,
+  .GM__ruby-translator ruby > rbc > rb {
+    margin-left: 0 !important; }
+  .GM__ruby-translator ruby > rbc,
+  .GM__ruby-translator ruby > rtc,
+  .GM__ruby-translator ruby rb,
+  .GM__ruby-translator ruby > rb,
+  .GM__ruby-translator ruby > rbc > rb {
     width: auto !important;
-    text-indent: 0 !important;
-}
-
-ruby {
+    text-indent: 0 !important; }
+  .GM__ruby-translator ruby {
     position: relative !important;
     display: inline-block !important;
     white-space: nowrap !important;
@@ -70,28 +61,23 @@ ruby {
     line-height: 1.4em !important;
     margin-top: .55em !important;
     text-indent: 0;
-    letter-spacing: 0;
-}
-
-ruby rp,
-ruby > rp {
-    display: none !important;
-}
-
-ruby rt,
-ruby > rt,
-ruby > rtc > rt,
-ruby > rtc {
+    letter-spacing: 0; }
+  .GM__ruby-translator ruby rp,
+  .GM__ruby-translator ruby > rp {
+    display: none !important; }
+  .GM__ruby-translator ruby rt,
+  .GM__ruby-translator ruby > rt,
+  .GM__ruby-translator ruby > rtc > rt,
+  .GM__ruby-translator ruby > rtc {
     position: absolute !important;
     left: 0 !important;
     margin-left: 0;
     font-size: .55em !important;
     line-height: 0 !important;
     letter-spacing: 0;
-    text-indent: 0;
-}
-
-ruby > rtc > rt {
+    text-indent: 0; }
+  .GM__ruby-translator ruby > rtc > rt {
     font-size: 0.55em !important;
-    transform: none !important;
-}
+    transform: none !important; }
+
+/*# sourceMappingURL=ruby.css.map */

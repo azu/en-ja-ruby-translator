@@ -30,7 +30,11 @@ document.addEventListener('mouseup', function (ev) {
     if (container == null) {
         return;
     }
+    if (container.classList.contains("GM__ruby-translator")) {
+        return;
+    }
     addStyle();
+    container.classList.add("GM__ruby-translator");
     replaceRuby(container);
 }, false);
 function replaceRuby(body) {
