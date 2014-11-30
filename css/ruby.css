@@ -2,10 +2,13 @@
 .GM__ruby-translator {
   /*each element*/ }
   .GM__ruby-translator .non-ruby-translator, .GM__ruby-translator .ruby-translator {
-    font-size: 1.2em !important; }
+    font-size: 1.3em !important; }
   .GM__ruby-translator .ruby-translator rt {
     width: 100% !important;
     text-align: center; }
+  .GM__ruby-translator .ruby-translator rt {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
   .GM__ruby-translator rt::selection {
     display: none !important; }
   .GM__ruby-translator rt::-moz-selection {

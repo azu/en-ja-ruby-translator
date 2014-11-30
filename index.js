@@ -39,29 +39,5 @@ document.addEventListener('mouseup', function (event) {
     }
     addStyle();
     container.classList.add("GM__ruby-translator");
-    replaceRuby(container);
+    rubyTranslator.annotateRubyToBody(container);
 }, false);
-function replaceRuby(body) {
-    if (body == null) {
-        return;
-    }
-    var r = document.evaluate(
-        './/text()',
-        body,
-        null,
-        XPathResult.ORDERED_NODE_SNAPSHOT_TYPE,
-        null
-    );
-    var i;
-    for (i = 0; i < r.snapshotLength; i++) {
-        var node = r.snapshotItem(i);
-        if (!rubyTranslator.canTranslateNode(node)) {
-            continue;
-        }
-        var rubyContainerNode = rubyTranslator.translateNode(node);
-        if (rubyContainerNode == null) {
-            continue;
-        }
-        node.parentNode.replaceChild(rubyContainerNode, node);
-    }
-}
