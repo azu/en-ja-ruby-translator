@@ -10,7 +10,13 @@
     width: 100% !important;
     text-align: center;
   }
-
+  // disable selection
+  rt::selection {
+    display: none !important;
+  }
+  rt::-moz-selection {
+    display: none !important;
+  }
   ruby,
   ruby > rbc,
   ruby > rtc,

@@ -6,6 +6,10 @@
   .GM__ruby-translator .ruby-translator rt {
     width: 100% !important;
     text-align: center; }
+  .GM__ruby-translator rt::selection {
+    display: none !important; }
+  .GM__ruby-translator rt::-moz-selection {
+    display: none !important; }
   .GM__ruby-translator ruby,
   .GM__ruby-translator ruby > rbc,
   .GM__ruby-translator ruby > rtc,
