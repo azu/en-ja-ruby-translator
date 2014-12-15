@@ -8,7 +8,6 @@
 // @version     1
 // @grant       GM_addStyle
 // @grant       GM_getResourceText
-// @resource    rubyCSS ruby.css
 // @noframes
 // @license : MIT
 // ==/UserScript==
