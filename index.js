@@ -1,6 +1,6 @@
 "use strict";
 // ==UserScript==
-// @name        en-ja-ruby-dictionary
+// @name        en-ja-ruby-translator
 // @namespace   http://efcl.info/
 // @description translate en to ja word.
 // @include     http://*
@@ -14,8 +14,8 @@
 var rubyTranslator = require("./lib/ruby-translator");
 var findAncestorContainer = require("./lib/find-ancestor-container");
 var GM_addStyle = require("./lib/GM_addStyle");
+var isAddedStyle = false;
 var addStyle = (function () {
-    var isAddedStyle = false;
     return function onceAddStyle() {
         if (isAddedStyle) {
             return;
@@ -24,12 +24,34 @@ var addStyle = (function () {
         isAddedStyle = true;
     }
 })();
+
+function hasSelection(){
+    return window.getSelection().toString().length > 0;
+}
 // Alt+Click-up
+var hiddenContainers = [];
 document.addEventListener('mouseup', function (event) {
+    var container;
+    if (isAddedStyle) {
+        container = findAncestorContainer();
+        // 選択範囲がない場合は、隠してたやつは全部元に戻す
+        if(!hasSelection()) {
+            hiddenContainers.forEach(function (container) {
+                container.classList.remove("GM__ruby-translator__hidden");
+            });
+            return;
+        }
+        if (!container.classList.contains("GM__ruby-translator__hidden")) {
+            container.classList.add("GM__ruby-translator__hidden");
+            hiddenContainers.push(container);
+        }
+
+        return;
+    }
     if (!event.altKey) {
         return
     }
-    var container = findAncestorContainer();
+    container = findAncestorContainer();
     if (container == null) {
         return;
     }

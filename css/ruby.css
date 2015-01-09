@@ -1,4 +1,7 @@
 /* wrap element*/
+.GM__ruby-translator.GM__ruby-translator__hidden rt {
+  display: none !important; }
+
 .GM__ruby-translator {
   /*each element*/ }
   .GM__ruby-translator .non-ruby-translator, .GM__ruby-translator .ruby-translator {

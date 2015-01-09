@@ -1,6 +1,9 @@
 /* wrap element*/
-.GM__ruby-translator {
+.GM__ruby-translator.GM__ruby-translator__hidden rt {
+  display: none !important;
+}
 
+.GM__ruby-translator {
   /*each element*/
   .non-ruby-translator, .ruby-translator {
     font-size: 1.3em !important;
@@ -14,6 +17,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
   // disable selection
   rt::selection {
     display: none !important;
