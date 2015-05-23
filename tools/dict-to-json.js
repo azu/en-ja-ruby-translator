@@ -20,8 +20,9 @@ function isIgnoreWord(word) {
 }
 function trimWord(word) {
     var removeCaptionPattern = /^\d\./;
+    var removeFirstBrackets = /^\(.*?\)/;
     var removeBrackets = /(《.*?》|\[.*?\]|【.*?】)/;
-    return word.replace(removeBrackets, "").replace(removeCaptionPattern, "");
+    return word.replace(removeBrackets, "").replace(removeCaptionPattern, "").replace(removeFirstBrackets, "");
 }
 xReadLine.forEach(2, function (list) {
     var original = list[0],
