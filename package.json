@@ -10,7 +10,7 @@
   "main": "index.js",
   "scripts": {
     "build": "browserify -t brfs index.js -o dist/en-ja-ruby-translator.user.js",
-    "watch": "watchify -t brfs index.js -o `git config greasemonkey.file || echo en-ja-ruby-translator.user.js`",
+    "watch": "watchify -t brfs index.js",
     "test": "mocha test/*.js"
   },
   "directories": {
@@ -23,14 +23,14 @@
   },
   "devDependencies": {
     "brfs": "^1.2.0",
-    "browserify": "^8.1.0",
-    "espower-loader": "^0.10.0",
-    "intelli-espower-loader": "^0.5.0",
-    "jsdom": "^2.0.0",
+    "browserify": "^10.2.1",
+    "espower-loader": "^0.11.0",
+    "intelli-espower-loader": "^0.7.0",
+    "jsdom": "^5.4.3",
     "mocha": "^2.0.1",
-    "mocha-jsdom": "^0.2.0",
-    "power-assert": "^0.10.0",
-    "watchify": "^2.1.1",
+    "mocha-jsdom": "^0.3.0",
+    "power-assert": "^0.11.0",
+    "watchify": "^3.2.1",
     "x-readline": "^1.0.1"
   }
 }
