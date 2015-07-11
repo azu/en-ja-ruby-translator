@@ -12,8 +12,9 @@ function isIgnoreWord(word) {
     return false;
 }
 // svl_levelを4以上のみにする
-function limitSVLLevel(object){
-    return object["svl_level"] >= 4;
+function limitSVLLevel(object) {
+    // レベルがないものはとりあえず含める
+    return object["svl_level"] == null || object["svl_level"] >= 4;
 }
 enKeys.forEach(function (key) {
     var object = dict[key];
@@ -23,7 +24,7 @@ enKeys.forEach(function (key) {
     var jaWords = dict[key].ja.filter(function (jaWord) {
         return !isIgnoreWord(jaWord);
     });
-    if(jaWords.length > 0) {
+    if (jaWords.length > 0) {
         results[key] = jaWords;
     }
 });
