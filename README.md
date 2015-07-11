@@ -16,7 +16,8 @@ open dist/en-ja-ruby-translator.user.js
 GENE95 辞書バージョン
 
 ```
-eopen dist/en-ja-ruby-translator.user.js
+make install-gene95
+open dist/en-ja-ruby-translator.user.js
 ```
 
 ## Usage
