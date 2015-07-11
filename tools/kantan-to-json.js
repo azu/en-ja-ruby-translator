@@ -24,7 +24,7 @@ enKeys.forEach(function (key) {
         return !isIgnoreWord(jaWord);
     });
     if(jaWords.length > 0) {
-        results[key] = dict[key].ja;
+        results[key] = jaWords;
     }
 });
 fs.writeFileSync(outputPath, JSON.stringify(results));

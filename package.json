@@ -35,6 +35,6 @@
     "kantan-ej-dict": "^1.0.1"
   },
   "dependencies": {
-
+    "nlp_compromise": "^1.1.2"
   }
 }
