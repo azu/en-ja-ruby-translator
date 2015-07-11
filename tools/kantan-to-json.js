@@ -11,7 +11,15 @@ function isIgnoreWord(word) {
     }
     return false;
 }
+// svl_levelを4以上のみにする
+function limitSVLLevel(object){
+    return object["svl_level"] >= 4;
+}
 enKeys.forEach(function (key) {
+    var object = dict[key];
+    if (!limitSVLLevel(object)) {
+        return;
+    }
     var jaWords = dict[key].ja.filter(function (jaWord) {
         return !isIgnoreWord(jaWord);
     });

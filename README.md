@@ -6,8 +6,17 @@
 
 ## Installation
 
+[gunyarakun/kantan-ej-dictionary](https://github.com/gunyarakun/kantan-ej-dictionary "gunyarakun/kantan-ej-dictionary")バージョン
+
 ```
 make install
+open dist/en-ja-ruby-translator.user.js
+```
+
+GENE95 辞書バージョン
+
+```
+make install-gene95
 open dist/en-ja-ruby-translator.user.js
 ```
 
