@@ -22,19 +22,19 @@
     "url": "https://github.com/azu/en-ja-ruby-translator/issues"
   },
   "devDependencies": {
-    "brfs": "^1.2.0",
-    "browserify": "^10.2.1",
-    "espower-loader": "^0.11.0",
-    "intelli-espower-loader": "^0.7.0",
-    "jsdom": "^5.4.3",
-    "mocha": "^2.0.1",
-    "mocha-jsdom": "^0.3.0",
-    "power-assert": "^0.11.0",
-    "watchify": "^3.2.1",
-    "x-readline": "^1.0.1",
-    "kantan-ej-dict": "^1.0.1"
+    "brfs": "^1.4.1",
+    "browserify": "^12.0.1",
+    "espower-loader": "^1.0.0",
+    "intelli-espower-loader": "^1.0.0",
+    "jsdom": "^7.2.1",
+    "kantan-ej-dict": "^1.0.1",
+    "mocha": "^2.3.4",
+    "mocha-jsdom": "^1.0.0",
+    "power-assert": "^1.2.0",
+    "watchify": "^3.6.1",
+    "x-readline": "^1.0.1"
   },
   "dependencies": {
-    "nlp_compromise": "^1.1.2"
+    "nlp_compromise": "^1.1.5"
   }
 }
