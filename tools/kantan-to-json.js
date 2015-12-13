@@ -14,7 +14,7 @@ function isIgnoreWord(word) {
 // svl_levelを4以上のみにする
 function limitSVLLevel(object) {
     // レベルがないものはとりあえず含める
-    return object["svl_level"] == null || object["svl_level"] >= 4;
+    return object["svl_level"] == null || object["svl_level"] >= 3;
 }
 enKeys.forEach(function (key) {
     var object = dict[key];
